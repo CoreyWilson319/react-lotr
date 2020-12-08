@@ -4,9 +4,29 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const fellowship = {
+  title: 'The Fellowship of the Ring',
+  hours: 2,
+  minutes: 58
+}
+const twoTowers = {
+  title: 'The Two Towers',
+  hours: 2,
+  minutes: 59
+}
+const returnOfTheKing = {
+  title: 'The Return of the King',
+  hours: 3,
+  minutes: 21
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App 
+      twoTowers={twoTowers}
+      returnOfTheKing={returnOfTheKing}
+      fellowship={fellowship}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );
